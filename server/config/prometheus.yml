@@ -1,0 +1,13 @@
+scrape_configs:
+  - job_name: 'iotcontroller'
+    scrape_interval: 5s
+    static_configs:
+      - targets:
+        - 'iot:8080'
+    metrics_path: '/actuator/prometheus'
+
+  - job_name: 'rule'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['rule:8081']
+    metrics_path: '/actuator/prometheus'
