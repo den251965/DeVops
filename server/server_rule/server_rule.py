@@ -90,7 +90,8 @@ if __name__ == '__main__':
     # Небольшая задержка
     # time.sleep(40)
     # Работа с БД
-    conn = psycopg2.connect('postgresql://postgres:cadri@localhost:5432/postgres')
+    # conn = psycopg2.connect('postgresql://postgres:cadri@localhost:5432/postgres')
+    conn = psycopg2.connect('postgresql://postgres:cadri@postgres_container:5432/postgres')
     isCreated_DB()
 
     # cadri = Person("Перл", "Иван", "Директор"),
