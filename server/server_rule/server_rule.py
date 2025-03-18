@@ -1,6 +1,5 @@
 import json
 import time
-# from array import *
 import collections
 
 from http.server import SimpleHTTPRequestHandler, HTTPServer

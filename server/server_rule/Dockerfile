@@ -1,13 +1,8 @@
 FROM python:latest
 
-RUN python -m pip install pika
-RUN pip show pika
+RUN python -m pip install psycopg2
+RUN pip show psycopg2
 
-ADD server_iot.py /server_rule/
+ADD server_rule.py /server_rule/
 
 WORKDIR /server_rule/
-
-
-
-
-
